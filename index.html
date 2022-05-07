@@ -409,22 +409,20 @@
         </div>
         <div class="footer-icon-wrap">
           <p class="subscribe-text">Подпишитесь на рассылку</p>
-          <form>
-            <div class="subscribe-wrap">
-              <label
-                ><input
-                  type="email"
-                  class="subscribe-input"
-                  name="user-subscribe-email"
-                  placeholder="E-mail"
-                  required
-              /></label>
-              <button type="submit" class="btn subscribe-btn">
-                Подписаться<svg class="subscribe-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-send"></use>
-                </svg>
-              </button>
-            </div>
+          <form class="subscribe-wrap">
+            <label
+              ><input
+                type="email"
+                class="subscribe-input"
+                name="user-subscribe-email"
+                placeholder="E-mail"
+                required
+            /></label>
+            <button type="submit" class="btn subscribe-btn">
+              Подписаться<svg class="subscribe-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
@@ -472,13 +470,15 @@
               </svg>
             </div>
           </div>
-          <label class="modal-label" for="user-text">Комментарий</label>
-          <textarea
-            name="user-text"
-            id="user-text"
-            placeholder="Введите текст"
-            class="modal-text"
-          ></textarea>
+          <div class="modal-field-text">
+            <label class="modal-label" for="user-text">Комментарий</label>
+            <textarea
+              name="user-text"
+              id="user-text"
+              placeholder="Введите текст"
+              class="modal-text"
+            ></textarea>
+          </div>
           <input
             type="checkbox"
             class="input-check visually-hidden"
